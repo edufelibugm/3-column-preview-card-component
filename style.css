@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    width: 920px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* COLUMNS */
+#column {
+    padding: 40px;
+}
+#column h1{
+    margin: 35px 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    Font-size: 15px;
+}
+.suvs {
+    background: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    Font-size: 15px;
+}
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    Font-size: 15px;
+}
+
+.sedans .btn a {
+    color: hsl(31, 77%, 52%);
+}
+.suvs .btn a {
+    color: hsl(184, 100%, 22%);
+}
+.luxury .btn a {
+    color: hsl(179, 100%, 13%);
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s;
+}
+a p {
+    padding: 15px;
+    transition: all .3s;
+}
+.btn {
+    background: hsl(0, 0%, 100%);
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 85px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background: hsla(0, 0%, 100%, 0);
+    border: 2px hsl(0, 0%, 100%) solid;
+    transition: all .5s;
+}
+a p:hover {
+    padding: 13px;
+    color: hsl(0, 0%, 100%);
+    transition: all .5s;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 910px) {
+    * {
+        transition: all .5s;
+    }
+
+    body {
+        overflow: scroll;
+    }
+    
+    main {
+        width: 375px;
+        height: 1450px;
+    }
+
+    .hero {
+        width: 325px;
+        height: 1325px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: absolute;
+        top: 700px;
+    }
+
+    /* COLUMNS */
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0px 10px 10px;
+    }
+}
